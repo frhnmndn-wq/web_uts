@@ -1,0 +1,9 @@
+# Aplikasi CRUD Produk UTS
+Tema: Data Produk Toko
+Nama: [Nama Anda]
+NIM: [NIM Anda]
+
+## Cara Install
+1. Import file database.sql ke MySQL.
+2. Sesuaikan koneksi.php.
+3. Jalankan di localhost.
