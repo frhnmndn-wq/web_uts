@@ -1,0 +1,209 @@
+/* --- RESET DATA DASAR --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Menggunakan font yang lebih modern */
+}
+
+body {
+    background-color: #d1d7df; /* Warna background abu-abu terang agar konten menonjol */
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px; /* Sedikit lebih lebar untuk kenyamanan */
+    margin: auto;
+}
+
+/* --- BAGIAN HEADER --- */
+.app-header {
+    background: linear-gradient(135deg, #2c3e50, #4ca1af); /* Gradien profesional */
+    color: white;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.app-header:hover {
+    transform: translateY(-3px); /* Efek melayang saat hover */
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.brand .emoji {
+    font-size: 2rem;
+}
+
+.brand h2 {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* --- BAGIAN TOMBOL --- */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.btn:active {
+    transform: scale(0.96); /* Efek tombol ditekan */
+}
+
+.btn-add {
+    background-color: #27ae60;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.btn-add:hover {
+    background-color: #1e8449;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.btn-edit {
+    background-color: #f39c12;
+    color: white;
+    margin-right: 5px;
+}
+
+.btn-edit:hover {
+    background-color: #ca800c;
+}
+
+.btn-delete {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #c0392b;
+}
+
+/* --- BAGIAN TABEL MODEREN --- */
+.card-table-wrapper {
+    background: white;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    overflow: hidden; /* Agar sudut tabel tumpul mengikuti card */
+}
+
+.table-produk {
+    width: 100%;
+    border-collapse: separate; /* Penting untuk efek sudut tumpul */
+    border-spacing: 0;
+}
+
+/* Header Tabel */
+.table-produk thead th {
+    background-color: #edf2f7;
+    color: #4a5568;
+    text-align: left;
+    padding: 15px 18px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+/* Baris Tabel */
+.table-produk tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.table-produk tbody tr:hover {
+    background-color: #f7fafc; /* Efek highlight saat baris dilewati */
+}
+
+.table-produk tbody tr td {
+    padding: 12px 18px;
+    border-bottom: 1px solid #edf2f7;
+    vertical-align: middle;
+}
+
+/* --- GAYA KOLOM KHUSUS --- */
+
+/* Gaya untuk foto */
+.thumb-produk {
+    width: 70px;
+    height: 70px;
+    object-fit: cover; /* Penting agar gambar tidak gepeng */
+    border-radius: 10px;
+    border: 2px solid #e2e8f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.thumb-produk:hover {
+    transform: scale(1.15) rotate(3deg); /* Efek pop-out interaktif saat hover */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    z-index: 10;
+}
+
+/* Placeholder untuk gambar yang hilang */
+.no-image-placeholder {
+    width: 70px;
+    height: 70px;
+    background-color: #e2e8f0;
+    color: #a0aec0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px dashed #cbd5e0;
+}
+
+.col-nama strong {
+    font-size: 16px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.prefix-rp {
+    color: #888;
+    font-size: 0.9em;
+    margin-right: 2px;
+}
+
+.badge-stok {
+    background-color: #edf2f7;
+    color: #2c3e50;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+/* Gaya untuk data kosong */
+.empty-row {
+    text-align: center;
+    padding: 60px 0;
+    color: #a0aec0;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
